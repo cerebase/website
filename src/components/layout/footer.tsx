@@ -113,16 +113,15 @@ export const Footer = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
-            <div>
+            <div aria-label="footer-services">
               <p className="font-medium text-gray-900">Services</p>
-
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    1on1 Coaching
+                    SagaGPT
                   </a>
                 </li>
 
@@ -131,7 +130,7 @@ export const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Company Review
+                    Prompt Engineering
                   </a>
                 </li>
 
@@ -140,15 +139,14 @@ export const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Accounts Review
+                    Model Fine-tunning
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div>
+            <div aria-label="footer-company">
               <p className="font-medium text-gray-900">Company</p>
-
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
@@ -173,22 +171,29 @@ export const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Accounts Review
+                    Open Positions
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div>
+            <div aria-label="footer-links">
               <p className="font-medium text-gray-900">Helpful Links</p>
-
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Contact
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
+                    Research
                   </a>
                 </li>
 
@@ -197,31 +202,21 @@ export const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    FAQs
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Live Chat
+                    Open Source
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div>
+            <div aria-label="footer-legal">
               <p className="font-medium text-gray-900">Legal</p>
-
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Accessibility
+                    Privacy Policy
                   </a>
                 </li>
 
@@ -230,7 +225,7 @@ export const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Returns Policy
+                    Cookie Policy
                   </a>
                 </li>
 
@@ -239,7 +234,7 @@ export const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75"
                   >
-                    Refund Policy
+                    Terms of Service
                   </a>
                 </li>
               </ul>
