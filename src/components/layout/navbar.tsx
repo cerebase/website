@@ -1,5 +1,8 @@
 "use client";
+
 import React from "react";
+import clsx from "clsx";
+
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -13,12 +16,14 @@ export const Navbar = () => {
     >
       <div className="mx-auto flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a className="flex space-x-2 text-primary items-center" href="/">
-          <span className="text-4xl">🔮</span>
-          <span className="text-sm font-light">
-            Copenhagen based AI/NLP research lab
-          </span>
-        </a>
+        <Link href="/">
+          <div className="flex space-x-2 text-primary items-center">
+            <span className="text-4xl">🔮</span>
+            <span className="text-sm font-light">
+              Copenhagen based AI/NLP research lab
+            </span>
+          </div>
+        </Link>
 
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav
@@ -78,30 +83,19 @@ interface props {
 }
 
 const NavItem = ({ href, children, pathname }: props) => {
-  if (pathname === href) {
-    return (
-      <li>
-        <Link
-          className={
-            "text-highlight transition hover:text-gray-500/75 pointer-events-none cursor-not-allowed select-none active:text-highlight"
-          }
-          href={href}
-        >
-          {children}
-        </Link>
-      </li>
-    );
-  }
-
+  const active = pathname === href;
   return (
     <li>
-      <Link
-        className={
-          "text-gray-800 transition hover:text-gray-500/75 pointer-events-none cursor-not-allowed select-none active:text-highlight"
-        }
-        href={href}
-      >
-        {children}
+      <Link href={href}>
+        <span
+          className={clsx(
+            "transition hover:text-gray-500/75",
+            active ? "text-highlight" : "text-gray-800",
+            active ? "cursor-not-allowed" : "cursor-pointer"
+          )}
+        >
+          {children}
+        </span>
       </Link>
     </li>
   );
