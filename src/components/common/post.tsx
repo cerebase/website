@@ -2,16 +2,14 @@ import React from "react";
 import Image from "next/image";
 
 // interface
-type Post = {
-    userId: number;
-    id: number;
-    title: string;
-    body: string;
-};
+import { Post as PostType } from "@/interfaces/post";
 
-export const Post = ({ post }: {post: Post}) => {
+export const Post = ({ post }: { post: PostType }) => {
   return (
-    <article className="overflow-hidden transition group" id={post.id.toString()}>
+    <article
+      className="overflow-hidden transition group"
+      id={post.id.toString()}
+    >
       <Image
         alt="Office"
         src="https://images.unsplash.com/photo-1679485205984-4ce35c32b2d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8fA%3D%3D"

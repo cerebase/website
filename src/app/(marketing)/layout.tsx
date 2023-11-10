@@ -12,7 +12,7 @@ import {
   SITE_KEYWORDS,
   SITE_TITLE,
   SITE_DESCRIPTION,
-} from "../../../lib/constants";
+} from "@/lib/constants";
 
 const inter = Inter({ subsets: ["latin"] });
 
