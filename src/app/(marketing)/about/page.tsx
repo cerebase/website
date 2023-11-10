@@ -5,7 +5,7 @@ import clsx from "clsx";
 // prettier-ignore
 const image_1 = "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 const image_2 = "https://images.unsplash.com/photo-1524758870432-af57e54afa26?q=80&w=2558&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-const image_3 = "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const image_3 = "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 // components
 import { Article } from "@/components/common/article";
@@ -34,8 +34,6 @@ const mockArticleThree: ArticleType = {
   image: image_3,
 };
 
-
-
 export default function page() {
   return (
     <main>
@@ -60,7 +58,7 @@ export default function page() {
       {/* About */}
       <section className="grid grid-cols-3 gap-10">
         {[...Array(8)].map((_, i) => (
-          <></>
+          <p key={i}></p>
         ))}
       </section>
     </main>

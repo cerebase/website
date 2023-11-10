@@ -38,7 +38,7 @@ export default async function page() {
 
       <section className="pt-8 p-8 grid grid-cols-3 gap-8">
         {dataLimited.map((post: PostType, i: number) => (
-          <Post key={i} post={post} />
+          <Post post={post} key={i} />
         ))}
       </section>
     </main>

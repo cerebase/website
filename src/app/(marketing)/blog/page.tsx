@@ -37,7 +37,7 @@ export default async function page() {
       <MiniFeature feature={feature} />
       <section className="py-16 px-8 grid grid-cols-3 gap-8">
         {dataLimited.map((post: PostType, i: number) => (
-          <Post key={i} post={post} />
+          <Post post={post} key={i} />
         ))}
       </section>
     </main>
