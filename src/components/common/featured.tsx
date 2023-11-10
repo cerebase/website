@@ -1,8 +1,4 @@
-const image =
-  "https://raw.githubusercontent.com/saga-labs/saga-gpt/main/public/assets/app.png";
-const image_new =
-  "https://images.unsplash.com/photo-1684139517679-032b7213ad2e?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-// const image_test = "https://images.unsplash.com/photo-1669465716237-9cb999b47773?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+import React from "react";
 
 // Intefaces & Types
 import { Feature } from "@/interfaces/feature";
