@@ -7,6 +7,7 @@ import { Post } from "@/components/common/post";
 // intefaces & types
 import { Feature } from "@/interfaces/feature";
 import { Post as PostType } from "@/interfaces/post";
+import { Statement } from "@/components/common/statement";
 
 async function getData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -20,7 +21,8 @@ async function getData() {
 
 export default async function page() {
   const data = await getData();
-  const dataLimited = data.slice(0, 15);
+  const dataFirst = data.slice(0, 3);
+  const dataLast = data.slice(4, 10);
 
   const feature: Feature = {
     image:
@@ -34,7 +36,13 @@ export default async function page() {
     <main className="min-h-full">
       <MiniFeature feature={feature} />
       <section className="py-16 px-8 grid grid-cols-3 gap-8">
-        {dataLimited.map((post: PostType, i: number) => (
+        {dataFirst.map((post: PostType, i: number) => (
+          <Post key={i} post={post} />
+        ))}
+      </section>
+      <Statement />
+      <section className="py-16 px-8 grid grid-cols-3 gap-8">
+        {dataLast.map((post: PostType, i: number) => (
           <Post key={i} post={post} />
         ))}
       </section>
