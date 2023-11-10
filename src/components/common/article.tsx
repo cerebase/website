@@ -23,12 +23,8 @@ export const Article = ({ content, width }: ArticleProps) => {
       />
 
       {/* Card content */}
-      <div className="relative hidden group-hover:block bg-gradient-to-t from-gray-900/50 to-gray-900/25">
-        <div className="p-4 sm:p-6">
-          <time dateTime="2022-10-10" className="block text-xs text-white/90">
-            10th Oct 2022
-          </time>
-
+      <div className="relative opacity-0 h-full group-hover:opacity-100 bg-gradient-to-t from-gray-900/50 to-gray-900/25">
+        <div className="absolute bottom-0 p-4 sm:p-6 flex flex-col justify-end">
           <a href="#">
             <h3 className="mt-0.5 text-lg text-white">{content.title}</h3>
           </a>
