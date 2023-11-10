@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <header
       aria-label="Site Header"
-      className="bg-white/90 border-b fixed w-full z-50"
+      className="bg-white/95 border-b fixed w-full z-50"
     >
       <div className="mx-auto flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
