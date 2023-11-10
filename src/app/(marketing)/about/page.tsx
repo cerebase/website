@@ -2,25 +2,39 @@ import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
-const image =
-  "https://images.unsplash.com/photo-1669465716237-9cb999b47773?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+// prettier-ignore
+const image_1 = "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const image_2 = "https://images.unsplash.com/photo-1524758870432-af57e54afa26?q=80&w=2558&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const image_3 = "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+// components
+import { Article } from "@/components/common/article";
 
 // interfaces & types
-import { Article } from "@/interfaces/article";
+import { Article as ArticleType } from "@/interfaces/article";
 
-const mockArticleOne: Article = {
+const mockArticleOne: ArticleType = {
   title: "How to position your furniture for positivity",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-  image: image,
+  image: image_1,
 };
 
-const mockArticleTwo: Article = {
+const mockArticleTwo: ArticleType = {
   title: "How to position your furniture for positivity",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-  image: image,
+  image: image_2,
 };
+
+const mockArticleThree: ArticleType = {
+  title: "How to position your furniture for positivity",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+  image: image_3,
+};
+
+
 
 export default function page() {
   return (
@@ -32,13 +46,13 @@ export default function page() {
       >
         <div className="grid grid-cols-4 gap-2 h-full p-2">
           {/* row 1 */}
-          <Article content={mockArticleTwo} width={2} />
+          <Article content={mockArticleThree} width={2} />
           <Article content={mockArticleOne} width={1} />
-          <Article content={mockArticleOne} width={1} />
+          <Article content={mockArticleTwo} width={1} />
 
           {/* row 2 */}
           <Article content={mockArticleOne} width={1} />
-          <Article content={mockArticleOne} width={1} />
+          <Article content={mockArticleThree} width={1} />
           <Article content={mockArticleTwo} width={2} />
         </div>
       </section>
@@ -52,39 +66,3 @@ export default function page() {
     </main>
   );
 }
-
-const Article = ({ content, width }: { content: Article; width: number }) => {
-  return (
-    <article
-      className={clsx(
-        "relative overflow-hidden shadow transition-all ease-in group",
-        `col-span-${width}`
-      )}
-    >
-      {/* Card Graphics */}
-      <Image
-        alt="Office"
-        src={content.image}
-        className="absolute inset-0 h-full w-full object-cover"
-        layout="fill"
-      />
-
-      {/* Card content */}
-      <div className="relative hidden group-hover:block bg-gradient-to-t from-gray-900/50 to-gray-900/25">
-        <div className="p-4 sm:p-6">
-          <time dateTime="2022-10-10" className="block text-xs text-white/90">
-            10th Oct 2022
-          </time>
-
-          <a href="#">
-            <h3 className="mt-0.5 text-lg text-white">{content.title}</h3>
-          </a>
-
-          <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-            {content.description}
-          </p>
-        </div>
-      </div>
-    </article>
-  );
-};
