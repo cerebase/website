@@ -1,11 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-type Review = {
-  user: string;
-  rating: number;
-  review: string;
-};
+// interfaces & types
+import { Review } from "@/interfaces/review";
 
 const mockReviews: Review[] = [
   {
@@ -37,7 +34,7 @@ export const Testemonials = () => {
         </h2>
 
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-          {mockReviews.map((review, i) => (
+          {mockReviews.map((review: Review, i) => (
             <Testemonial review={review} key={i} />
           ))}
         </div>
@@ -60,7 +57,9 @@ const Testemonial = ({ review }: { review: Review }) => {
 
         <div>
           <p className="mt-0.5 font-medium text-gray-900">{review.user}</p>
-          <p className="font-light text-xs text-highlight">Senior Program Manager at Microsoft</p>
+          <p className="font-light text-xs text-highlight">
+            Senior Program Manager at Microsoft
+          </p>
         </div>
       </div>
 

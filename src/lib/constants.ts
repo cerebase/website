@@ -11,3 +11,9 @@ export const SITE_KEYWORDS = [
   "NLP products",
   "Copenhagen",
 ];
+
+// Media Constants
+export const MEDIA_MAIN_FEATURE = "https://images.unsplash.com/photo-1684139517679-032b7213ad2e?q=80&w=3028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+export const MEDIA_RESEARCH = "https://images.unsplash.com/photo-1658937364065-60f3f6818724?q=80&w=3293&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+export const MEDIA_BLOG = "blog";
+export const MEDIA_OSS = "oss";
