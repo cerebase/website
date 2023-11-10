@@ -5,9 +5,10 @@ import { Feature } from "@/interfaces/feature";
 
 export const Featured = ({ feature }: { feature: Feature }) => {
   return (
-    <section
+    <div
       className="overflow-hidden bg-blend-difference h-screen bg-cover bg-top bg-no-repeat bg-gradient-to-r from-indigo-300 to-purple-400 flex items-end"
       style={{
+        height: "calc(100vh - 4rem)",
         backgroundImage: `url(${feature.image})`,
       }}
     >
@@ -30,6 +31,6 @@ export const Featured = ({ feature }: { feature: Feature }) => {
           Maxim Berg
         </a>
       </span>
-    </section>
+    </div>
   );
 };

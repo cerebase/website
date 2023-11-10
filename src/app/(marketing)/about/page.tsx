@@ -24,13 +24,13 @@ const mockArticleTwo: Article = {
 
 export default function page() {
   return (
-    <main className="pt-16 px-0">
+    <main>
       {/* Image Grid */}
       <section
         className="overflow-hidden bg-blend-difference w-full"
         style={{ height: "calc(100vh - 4rem)" }}
       >
-        <div className="grid grid-cols-4 gap-2 h-full">
+        <div className="grid grid-cols-4 gap-2 h-full p-2">
           {/* row 1 */}
           <Article content={mockArticleTwo} width={2} />
           <Article content={mockArticleOne} width={1} />
@@ -44,7 +44,7 @@ export default function page() {
       </section>
 
       {/* About */}
-      <section className="grid grid-cols-3 gap-10 pt-2">
+      <section className="grid grid-cols-3 gap-10">
         {[...Array(8)].map((_, i) => (
           <></>
         ))}
