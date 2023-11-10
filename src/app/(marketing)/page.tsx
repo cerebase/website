@@ -1,6 +1,6 @@
 // Components
 import { Featured } from "@/components/common/featured";
-import { Testemonials } from "@/features/testimonials";
+// import { Testemonials } from "@/features/testimonials";
 
 // Intefaces & Types
 import { Feature } from "@/interfaces/feature";
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Featured feature={mainFeature} />
-      <Testemonials />
+      {/* <Testemonials /> */}
     </main>
   );
 }
