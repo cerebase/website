@@ -1,16 +1,25 @@
 import React from "react";
 import Image from "next/image";
+import clsx from "clsx";
 
 // interfaces & types
 import { Article as ArticleType } from "@/interfaces/article";
 
 interface ArticleProps {
   content: ArticleType;
+  focus: boolean;
+  setFocus: () => void;
 }
 
-export const Article = ({ content }: ArticleProps) => {
+export const Article = ({ content, focus, setFocus }: ArticleProps) => {
   return (
-    <article className="relative overflow-hidden shadow transition-all ease-in group col-span-1">
+    <article
+      className={clsx(
+        "relative overflow-hidden shadow transition-all duration-500 ease-in-out group",
+        focus ? "col-span-2" : "col-span-1"
+      )}
+      onClick={setFocus}
+    >
       {/* Card Graphics */}
       <Image
         alt="Office"
@@ -27,7 +36,7 @@ export const Article = ({ content }: ArticleProps) => {
           </a>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-            {content.description}
+            {content.text}
           </p>
         </div>
       </div>

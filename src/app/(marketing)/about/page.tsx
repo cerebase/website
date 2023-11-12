@@ -1,43 +1,26 @@
+"use client";
 import React from "react";
-import Image from "next/image";
-import clsx from "clsx";
 
-// prettier-ignore
-const image_1 = "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-const image_2 =
-  "https://images.unsplash.com/photo-1524758870432-af57e54afa26?q=80&w=2558&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-const image_3 =
-  "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+// data
+import aboutData from "@/features/about-grid/mock/data.json";
 
 // components
-import { Article } from "@/components/common/article";
-import { ArticleWide } from "@/components/common/article-wide";
+import { Article } from "@/features/about-grid/components/article";
 
-// interfaces & types
-import { Article as ArticleType } from "@/interfaces/article";
+export default function Page() {
+  const [focusedRowOne, setFocusedRowOne] = React.useState(0);
+  const [focusedRowTwo, setFocusedRowTwo] = React.useState(2);
 
-const mockArticleOne: ArticleType = {
-  title: "How to position your furniture for positivity",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-  image: image_1,
-};
+  // focus handler row 1
+  const handleFocusRowOne = (index: number) => {
+    setFocusedRowOne(index);
+  };
 
-const mockArticleTwo: ArticleType = {
-  title: "How to position your furniture for positivity",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-  image: image_2,
-};
+  // focus handler row 2
+  const handleFocusRowTwo = (index: number) => {
+    setFocusedRowTwo(index);
+  };
 
-const mockArticleThree: ArticleType = {
-  title: "How to position your furniture for positivity",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-  image: image_3,
-};
-
-export default function page() {
   return (
     <main>
       {/* Image Grid */}
@@ -47,14 +30,38 @@ export default function page() {
       >
         <div className="grid grid-cols-4 gap-2 h-full p-2">
           {/* row 1 */}
-          <ArticleWide content={mockArticleThree} />
-          <Article content={mockArticleOne} />
-          <Article content={mockArticleTwo} />
+          <Article
+            content={aboutData.topics.innovation}
+            focus={focusedRowOne == 0}
+            setFocus={() => handleFocusRowOne(0)}
+          />
+          <Article
+            content={aboutData.topics.humanCentric}
+            focus={focusedRowOne == 1}
+            setFocus={() => handleFocusRowOne(1)}
+          />
+          <Article
+            content={aboutData.topics.openSource}
+            focus={focusedRowOne == 2}
+            setFocus={() => handleFocusRowOne(2)}
+          />
 
           {/* row 2 */}
-          <Article content={mockArticleOne} />
-          <Article content={mockArticleThree} />
-          <ArticleWide content={mockArticleTwo} />
+          <Article
+            content={aboutData.topics.sustainability}
+            focus={focusedRowTwo == 0}
+            setFocus={() => handleFocusRowTwo(0)}
+          />
+          <Article
+            content={aboutData.topics.naturalInteraction}
+            focus={focusedRowTwo == 1}
+            setFocus={() => handleFocusRowTwo(1)}
+          />
+          <Article
+            content={aboutData.topics.communityDriven}
+            focus={focusedRowTwo == 2}
+            setFocus={() => handleFocusRowTwo(2)}
+          />
         </div>
       </section>
     </main>

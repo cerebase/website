@@ -113,32 +113,9 @@ export const Footer = () => {
             <div aria-label="footer-legal">
               <p className="font-medium text-gray-900">Legal</p>
               <ul className="mt-6 space-y-4 text-sm">
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Cookie Policy
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
+                <LinkInternal text="Privacy Policy" url="/privacy-policy" />
+                <LinkInternal text="Cookie Policy" url="/cookie-policy" />
+                <LinkInternal text="Terms of Service" url="/terms-of-service" />
               </ul>
             </div>
           </div>

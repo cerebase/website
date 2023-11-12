@@ -27,7 +27,7 @@ export const ArticleWide = ({ content }: ArticleProps) => {
           </a>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-            {content.description}
+            {content.text}
           </p>
         </div>
       </div>
