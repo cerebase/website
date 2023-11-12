@@ -19,8 +19,8 @@ export const Navbar = () => {
         <Link href="/">
           <div className="flex space-x-2 text-primary items-center">
             <span className="text-4xl">🔮</span>
-            <span className="text-sm font-light">
-              Copenhagen based AI/NLP research lab
+            <span className="text-sm font-light tracking-wider">
+              Copenhagen based AI studio
             </span>
           </div>
         </Link>
