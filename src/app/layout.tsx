@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 
 // Components
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+// import { Navbar } from "@/components/layout/navbar";
+// import { Footer } from "@/components/layout/footer";
 
 // Constants
 import {
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   authors: SITE_AUTHORS,
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface Props {
   children: React.ReactNode;
-}) {
+}
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

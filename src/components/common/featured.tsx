@@ -12,11 +12,11 @@ export const Featured = ({ feature }: { feature: Feature }) => {
         backgroundImage: `url(${feature.image})`,
       }}
     >
-      <div className="h-full w-full flex items-end">
-        <div className="p-8 md:pb-24 lg:px-16 lg:pb-32">
+      <div className="absolute top-0 h-full w-full flex items-end z-20">
+        <div className="p-8 md:pb-16 lg:pb-24">
           <div className="text-left">
-            <h2 className="text-lg font-bold text-highlight">Featured</h2>
-            <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+            <h2 className="text-lg font-bold text-white">{feature.feature}</h2>
+            <h2 className="text-2xl font-bold text-white/90 sm:text-3xl md:text-4xl">
               {feature.title}
             </h2>
             <p className="hidden max-w-xl text-white/90 md:mt-6 md:block md:text-sm md:leading-relaxed">

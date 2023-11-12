@@ -8,9 +8,9 @@ interface ArticleProps {
   content: ArticleType;
 }
 
-export const Article = ({ content }: ArticleProps) => {
+export const ArticleWide = ({ content }: ArticleProps) => {
   return (
-    <article className="relative overflow-hidden shadow transition-all ease-in group col-span-1">
+    <article className="relative overflow-hidden shadow transition-all ease-in group col-span-2">
       {/* Card Graphics */}
       <Image
         alt="Office"
