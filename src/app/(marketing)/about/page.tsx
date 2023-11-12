@@ -6,6 +6,10 @@ import aboutData from "@/features/about-grid/mock/data.json";
 
 // components
 import { Article } from "@/features/about-grid/components/article";
+import { ArticleWide } from "@/features/about-grid/components/article-wide";
+
+// interfaces & types
+import { Article as ArticleType } from "@/interfaces/article";
 
 export default function Page() {
   const [focusedRowOne, setFocusedRowOne] = React.useState(0);
@@ -30,40 +34,64 @@ export default function Page() {
       >
         <div className="grid grid-cols-4 gap-2 h-full p-2">
           {/* row 1 */}
-          <Article
+          <ArticleRenderer
             content={aboutData.topics.innovation}
-            focus={focusedRowOne == 0}
-            setFocus={() => handleFocusRowOne(0)}
+            wide={focusedRowOne === 0}
+            index={0}
+            setFocus={handleFocusRowOne}
           />
-          <Article
+          <ArticleRenderer
             content={aboutData.topics.humanCentric}
-            focus={focusedRowOne == 1}
-            setFocus={() => handleFocusRowOne(1)}
+            wide={focusedRowOne === 1}
+            index={1}
+            setFocus={handleFocusRowOne}
           />
-          <Article
+          <ArticleRenderer
             content={aboutData.topics.openSource}
-            focus={focusedRowOne == 2}
-            setFocus={() => handleFocusRowOne(2)}
+            wide={focusedRowOne === 2}
+            index={2}
+            setFocus={handleFocusRowOne}
           />
 
           {/* row 2 */}
-          <Article
+          <ArticleRenderer
             content={aboutData.topics.sustainability}
-            focus={focusedRowTwo == 0}
-            setFocus={() => handleFocusRowTwo(0)}
+            wide={focusedRowTwo === 0}
+            index={0}
+            setFocus={handleFocusRowTwo}
           />
-          <Article
+          <ArticleRenderer
             content={aboutData.topics.naturalInteraction}
-            focus={focusedRowTwo == 1}
-            setFocus={() => handleFocusRowTwo(1)}
+            wide={focusedRowTwo === 1}
+            index={1}
+            setFocus={handleFocusRowTwo}
           />
-          <Article
+          <ArticleRenderer
             content={aboutData.topics.communityDriven}
-            focus={focusedRowTwo == 2}
-            setFocus={() => handleFocusRowTwo(2)}
+            wide={focusedRowTwo === 2}
+            index={2}
+            setFocus={handleFocusRowTwo}
           />
         </div>
       </section>
     </main>
   );
 }
+
+interface ArticleRendererProps {
+  content: ArticleType;
+  wide: boolean;
+  index: number;
+  setFocus: (index: number) => void;
+}
+
+const ArticleRenderer = (props: ArticleRendererProps) => {
+  return props.wide ? (
+    <ArticleWide content={props.content} />
+  ) : (
+    <Article
+      content={props.content}
+      setFocus={() => props.setFocus(props.index)}
+    />
+  );
+};
