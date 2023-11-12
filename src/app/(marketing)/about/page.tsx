@@ -57,13 +57,6 @@ export default function page() {
           <ArticleWide content={mockArticleTwo} />
         </div>
       </section>
-
-      {/* About */}
-      <section className="grid grid-cols-3 gap-10">
-        {[...Array(8)].map((_, i) => (
-          <p key={i}></p>
-        ))}
-      </section>
     </main>
   );
 }
