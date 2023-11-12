@@ -7,17 +7,13 @@ import { Article as ArticleType } from "@/interfaces/article";
 
 interface ArticleProps {
   content: ArticleType;
-  focus: boolean;
   setFocus: () => void;
 }
 
-export const Article = ({ content, focus, setFocus }: ArticleProps) => {
+export const Article = ({ content, setFocus }: ArticleProps) => {
   return (
     <article
-      className={clsx(
-        "relative overflow-hidden shadow transition-all duration-500 ease-in-out group",
-        focus ? "col-span-2" : "col-span-1"
-      )}
+      className="relative overflow-hidden shadow transition-all duration-500 ease-in-out group col-span-1"
       onClick={setFocus}
     >
       {/* Card Graphics */}
