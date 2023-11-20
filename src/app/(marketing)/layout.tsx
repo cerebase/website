@@ -1,6 +1,7 @@
+import "@/styles/globals.css";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@/styles/globals.css";
 
 // Components
 import { Navbar } from "@/components/layout/navbar";
@@ -29,13 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
+    <main className={inter.className} id="inner-body">
+      <Navbar />
 
-        <main className="pt-16">{children}</main>
-        <Footer />
-      </body>
-    </html>
+      <section className="pt-16">{children}</section>
+      <Footer />
+    </main>
   );
 }

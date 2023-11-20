@@ -29,13 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
+    <main className={inter.className}>
+      <Navbar />
 
-        <main className="pt-16">{children}</main>
-        <Footer />
-      </body>
-    </html>
+      <section className="pt-16">{children}</section>
+      <Footer />
+    </main>
   );
 }

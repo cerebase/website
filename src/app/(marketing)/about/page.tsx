@@ -1,5 +1,7 @@
 "use client";
+
 import React from "react";
+import type { Metadata } from "next";
 
 // data
 import aboutData from "@/features/about-grid/mock/data.json";
@@ -10,6 +12,11 @@ import { ArticleWide } from "@/features/about-grid/components/article-wide";
 
 // interfaces & types
 import { Article as ArticleType } from "@/interfaces/article";
+
+// lib / constants
+import { SITE_TITLE } from "@/lib/constants";
+
+
 
 export default function Page() {
   const [focusedRowOne, setFocusedRowOne] = React.useState(0);

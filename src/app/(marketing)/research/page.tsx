@@ -1,4 +1,5 @@
 import React from "react";
+import type { Metadata } from "next";
 
 // Constants
 import { MEDIA_RESEARCH } from "@/lib/constants";
@@ -10,6 +11,13 @@ import { Post } from "@/components/common/post";
 // interface
 import { Feature } from "@/interfaces/feature";
 import { Post as PostType } from "@/interfaces/post";
+
+// lib / constants
+import { SITE_TITLE } from "@/lib/constants";
+
+export const metadata: Metadata = {
+  title: SITE_TITLE + " | Research",
+};
 
 async function getData() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
