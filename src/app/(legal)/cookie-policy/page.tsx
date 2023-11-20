@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function page() {
-  return <p>Cookies... Yum</p>;
+  return <h1>Cookies... Yum</h1>;
 }
