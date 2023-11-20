@@ -13,9 +13,9 @@ export const MiniFeature = ({ feature }: { feature: Feature }) => {
     >
       <div className="p-8 md:pt-24 lg:px-16 lg:pt-36">
         <div className="text-left">
-          <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+          <h1 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
             {feature.title}
-          </h2>
+          </h1>
           <p className="hidden max-w-xl text-white/90 md:mt-6 md:block md:text-sm md:leading-relaxed line-clamp-2">
             {feature.description}
           </p>
