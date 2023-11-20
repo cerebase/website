@@ -16,8 +16,6 @@ import { Article as ArticleType } from "@/interfaces/article";
 // lib / constants
 import { SITE_TITLE } from "@/lib/constants";
 
-
-
 export default function Page() {
   const [focusedRowOne, setFocusedRowOne] = React.useState(0);
   const [focusedRowTwo, setFocusedRowTwo] = React.useState(2);

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function page() {
-  return <p>Privacy... Nice</p>;
+  return <h1>Privacy... Nice</h1>;
 }

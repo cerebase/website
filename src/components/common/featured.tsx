@@ -16,9 +16,9 @@ export const Featured = ({ feature }: { feature: Feature }) => {
         <div className="p-8 md:pb-16 lg:pb-24">
           <div className="text-left">
             <h2 className="text-lg font-bold text-white">{feature.feature}</h2>
-            <h2 className="text-2xl font-bold text-white/90 sm:text-3xl md:text-4xl">
+            <h1 className="text-2xl font-bold text-white/90 sm:text-3xl md:text-4xl">
               {feature.title}
-            </h2>
+            </h1>
             <p className="hidden max-w-xl text-white/90 md:mt-6 md:block md:text-sm md:leading-relaxed">
               {feature.description}
             </p>
