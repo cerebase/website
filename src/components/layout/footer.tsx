@@ -72,16 +72,16 @@ export const Footer = () => {
               <p className="font-medium text-gray-900">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
                 <LinkExternal
-                  text="SagaGPT"
+                  text="Chat Client"
+                  url="https://chat.saga-labs.com"
+                />
+                <LinkExternal
+                  text="Desktop Client"
                   url="https://github.com/saga-labs/saga-gpt"
                 />
-                <LinkInternal
-                  text="Prompt Engineering"
-                  url="/research#prompt-engineering"
-                />
-                <LinkInternal
-                  text="Model Tunning"
-                  url="/research#model-tunning"
+                <LinkExternal
+                  text="Model Cloud"
+                  url="https://cloud.saga-labs.com"
                 />
               </ul>
             </div>

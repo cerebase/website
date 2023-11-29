@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 // Components
 import { MiniFeature } from "@/components/common/mini-feature";
+import { PostFeatured } from "@/components/common/post-featured";
 import { Post } from "@/components/common/post";
 
 // interface
@@ -10,6 +11,7 @@ import { Post as PostType } from "@/interfaces/post";
 
 // lib / constants
 import { SITE_TITLE } from "@/lib/constants";
+import { Statement } from "@/components/common/statement";
 
 export const metadata: Metadata = {
   title: SITE_TITLE + " | What we are up to",
@@ -30,7 +32,8 @@ async function getData() {
 
 export default async function page() {
   const data = await getData();
-  const dataLimited: PostType[] = data.slice(0, 15);
+  const dataFirst = data.at(0);
+  const dataLimited: PostType[] = data.slice(1, 15);
 
   const feature = {
     image:
@@ -43,6 +46,15 @@ export default async function page() {
   return (
     <main className="min-h-full">
       <MiniFeature feature={feature} />
+
+      <section className="py-16 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="md:col-span-2 lg:col-span-3">
+          <PostFeatured post={dataFirst} />
+        </div>
+      </section>
+
+      <Statement />
+
       <section className="py-16 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {dataLimited.map((post: PostType, i: number) => (
           <Post post={post} key={i} />

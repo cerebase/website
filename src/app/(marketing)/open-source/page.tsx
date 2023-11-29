@@ -43,6 +43,7 @@ export default async function page() {
   return (
     <main className="min-h-full">
       <MiniFeature feature={feature} />
+      
       <section className="py-16 px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8">
         {dataFirst.map((post: PostType, i: number) => (
           <Post post={post} key={i} />
