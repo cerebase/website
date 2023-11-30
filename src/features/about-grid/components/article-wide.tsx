@@ -15,8 +15,9 @@ export const ArticleWide = ({ content }: ArticleProps) => {
       <Image
         alt="Office"
         src={content.image}
-        className="absolute inset-0 h-full w-full object-cover"
-        layout="fill"
+        className="absolute inset-0 object-cover"
+        width={512}
+        height={512}
       />
 
       {/* Card content */}

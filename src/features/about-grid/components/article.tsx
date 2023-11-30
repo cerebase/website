@@ -17,12 +17,12 @@ export const Article = ({ content, setFocus }: ArticleProps) => {
       onClick={setFocus}
     >
       {/* Card Graphics */}
-      <Image
+      {/* <Image
         alt="Office"
         src={content.image}
         className="absolute inset-0 h-full w-full object-cover"
         layout="fill"
-      />
+      /> */}
 
       {/* Card content */}
       <div className="relative opacity-0 h-full group-hover:opacity-100 bg-gradient-to-t from-gray-900/50 to-gray-900/25">
