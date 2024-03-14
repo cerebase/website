@@ -3,17 +3,17 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-white border-t">
+    <footer className="border-t bg-white">
       <div className="space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <div className="flex flex-row items-center space-x-2">
               <span className="text-3xl">🔮</span>
-              <span>Saga Labs</span>
+              <span>cerebase</span>
             </div>
 
             <p className="mt-4 max-w-xs text-sm text-gray-500">
-              Saga Labs is a forward-thinking technology company dedicated to
+              cerebase is a forward-thinking technology company dedicated to
               create intuitive solutions that empower individuals and businesses
               to thrive in the digital age.
             </p>
@@ -28,16 +28,12 @@ export const Footer = () => {
                 >
                   <span className="sr-only">LinkedIn</span>
                   <svg
-                    className="h-6 w-6"
-                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
-                    aria-hidden="true"
                   >
-                    <path
-                      fillRule="evenodd"
-                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                      clipRule="evenodd"
-                    />
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                   </svg>
                 </a>
               </li>
@@ -51,16 +47,12 @@ export const Footer = () => {
                 >
                   <span className="sr-only">GitHub</span>
                   <svg
-                    className="h-6 w-6"
-                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
                     viewBox="0 0 24 24"
-                    aria-hidden="true"
                   >
-                    <path
-                      fillRule="evenodd"
-                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                      clipRule="evenodd"
-                    />
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
                   </svg>
                 </a>
               </li>
@@ -75,14 +67,14 @@ export const Footer = () => {
                   text="Chat Client"
                   url="https://chat.saga-labs.com"
                 />
-                <LinkExternal
+                {/* <LinkExternal
                   text="Desktop Client"
                   url="https://github.com/saga-labs/saga-gpt"
-                />
-                <LinkExternal
+                /> */}
+                {/* <LinkExternal
                   text="Model Cloud"
                   url="https://cloud.saga-labs.com"
-                />
+                /> */}
               </ul>
             </div>
 
@@ -125,7 +117,7 @@ export const Footer = () => {
       <div className="border-t">
         <div className=" space-y-8 px-4 py-6 sm:px-6 lg:space-y-16 lg:px-8">
           <p className="text-xs text-gray-500">
-            &copy; 2023. Saga Labs. All rights reserved.
+            &copy; 2023. cerebase. All rights reserved.
           </p>
         </div>
       </div>
@@ -144,7 +136,7 @@ const LinkExternal = ({ url, text }: LinkProps) => (
       href={url}
       target="_blank"
       rel="noreferrer"
-      className="text-gray-700 transition hover:opacity-75 hover:underline"
+      className="text-gray-700 transition hover:underline hover:opacity-75"
     >
       {text}
     </a>
@@ -155,7 +147,7 @@ const LinkInternal = ({ url, text }: LinkProps) => (
   <li>
     <Link
       href={url}
-      className="text-gray-700 transition hover:opacity-75 hover:underline"
+      className="text-gray-700 transition hover:underline hover:opacity-75"
     >
       {text}
     </Link>

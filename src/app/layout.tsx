@@ -17,7 +17,7 @@ import {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://saga-labs.com'),
+  metadataBase: new URL("https://cerebase.com"),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   keywords: SITE_KEYWORDS,
@@ -31,7 +31,9 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className={inter.className} id="outer-body">{children}</body>
+      <body className={inter.className} id="outer-body">
+        {children}
+      </body>
     </html>
   );
 }

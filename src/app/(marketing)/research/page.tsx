@@ -35,16 +35,16 @@ export default async function page() {
 
   const feature: Feature = {
     image: MEDIA_RESEARCH,
-    title: "Research at Saga Labs",
+    title: "Research at cerebase",
     description:
-      "Our mission is to cultivate open-source LLM applications that are user-friendly and accessible, promoting inclusivity and responsible technology development. Here at Saga Labs, we are committed to researching and developing such LLM applications.",
+      "Our mission is to cultivate open-source LLM applications that are user-friendly and accessible, promoting inclusivity and responsible technology development. Here at cerebase, we are committed to researching and developing such LLM applications.",
   };
 
   return (
     <main className="min-h-full">
       <MiniFeature feature={feature} />
 
-      <section className="pt-8 p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="grid grid-cols-1 gap-8 p-8 pt-8 md:grid-cols-2 lg:grid-cols-3">
         {dataLimited.map((post: PostType, i: number) => (
           <Post post={post} key={i} />
         ))}

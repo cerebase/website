@@ -1,36 +1,36 @@
 {
-  "company": "Saga Labs",
+  "company": "cerebase",
   "location": "Copenhagen",
   "focus": "Building open source software and tools for human-computer interaction with LLM systems",
   "topics": {
     "innovation": {
       "title": "Innovating Tomorrow's Interactions",
-      "text": "At Saga Labs, we're not just building software; we're crafting the future of human-computer interaction. Rooted in Copenhagen, our startup thrives on innovation, dedicating our efforts to open source software that empowers seamless connections between humans and LLM systems.",
+      "text": "At cerebase, we're not just building software; we're crafting the future of human-computer interaction. Rooted in Copenhagen, our startup thrives on innovation, dedicating our efforts to open source software that empowers seamless connections between humans and LLM systems.",
       "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fGlubm92YXRpb24lMjB0ZWNobm9sb2d5fGVufDB8MHwwfHx8MA%3D%3D"
     },
     "openSource": {
       "title": "Open Source Pioneers",
-      "text": "Saga Labs proudly champions the open-source movement. We believe in the power of collaboration and transparency. By developing and sharing our tools with the global community, we aim to accelerate progress in the field of natural language processing and enhance the accessibility of advanced technologies.",
+      "text": "cerebase proudly champions the open-source movement. We believe in the power of collaboration and transparency. By developing and sharing our tools with the global community, we aim to accelerate progress in the field of natural language processing and enhance the accessibility of advanced technologies.",
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "humanCentric": {
       "title": "Human-Centric Solutions",
-      "text": "Beyond lines of code, Saga Labs places people at the core of our mission. Our tools are designed to enhance human experiences with machine learning models. We're dedicated to making complex technologies accessible, ensuring that users interact with AI in the most intuitive and natural ways.",
+      "text": "Beyond lines of code, cerebase places people at the core of our mission. Our tools are designed to enhance human experiences with machine learning models. We're dedicated to making complex technologies accessible, ensuring that users interact with AI in the most intuitive and natural ways.",
       "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "communityDriven": {
       "title": "Community-Driven Development",
-      "text": "Saga Labs believes in the strength of community. Our development thrives on diverse perspectives and collaborative efforts. Whether you're a seasoned coder, a curious enthusiast, or an industry expert, join us on our journey to shape the future of open-source human-computer interaction.",
+      "text": "cerebase believes in the strength of community. Our development thrives on diverse perspectives and collaborative efforts. Whether you're a seasoned coder, a curious enthusiast, or an industry expert, join us on our journey to shape the future of open-source human-computer interaction.",
       "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "naturalInteraction": {
       "title": "Elevating Conversations",
-      "text": "Communication shouldn't be a barrier to technology. Saga Labs focuses on creating tools that facilitate meaningful and effortless conversations between humans and language models. We're committed to breaking down the complexities of interaction, making it as natural as chatting with a friend.",
+      "text": "Communication shouldn't be a barrier to technology. cerebase focuses on creating tools that facilitate meaningful and effortless conversations between humans and language models. We're committed to breaking down the complexities of interaction, making it as natural as chatting with a friend.",
       "image": "https://images.unsplash.com/photo-1573496546038-82f9c39f6365?q=80&w=3269&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "sustainability": {
       "title": "Sustainable Innovation",
-      "text": "Saga Labs is not only committed to technological advancement but also to the planet. Our commitment to sustainability extends beyond code to responsible business practices. We're dedicated to minimizing our environmental footprint and contributing positively to the communities we serve.",
+      "text": "cerebase is not only committed to technological advancement but also to the planet. Our commitment to sustainability extends beyond code to responsible business practices. We're dedicated to minimizing our environmental footprint and contributing positively to the communities we serve.",
       "image": "https://images.unsplash.com/photo-1597697113431-dcebd921a750?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   }

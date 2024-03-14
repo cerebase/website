@@ -12,19 +12,19 @@ const mockReviews: Review[] = [
     user: "John Doe",
     rating: 5,
     review:
-      "SagaGPT has transformed the way I work! Its AI-driven chat features are simply incredible, making my desktop conversations more efficient and enjoyable. I can't imagine my workday without it.",
+      "Cerebase Cloud has transformed the way I work! Its AI-driven chat features are simply incredible, making my desktop conversations more efficient and enjoyable. I can't imagine my workday without it.",
   },
   {
     user: "Jane Doe",
     rating: 4,
     review:
-      "I've tried many desktop chat apps, but SagaGPT stands out with its unique AI capabilities. It's user-friendly, and the AI assistance is a game-changer. I'm looking forward to even more features in future updates!",
+      "I've tried many desktop chat apps, but Cerebase Cloud stands out with its unique AI capabilities. It's user-friendly, and the AI assistance is a game-changer. I'm looking forward to even more features in future updates!",
   },
   {
     user: "John Smith",
     rating: 5,
     review:
-      "SagaGPT has redefined the way we collaborate in our office. It streamlines our communication and makes it so easy to exchange ideas. The AI-powered suggestions are remarkably accurate. Highly recommended for anyone seeking productivity gains.",
+      "Cerebase has redefined the way we collaborate in our office. It streamlines our communication and makes it so easy to exchange ideas. The AI-powered suggestions are remarkably accurate. Highly recommended for anyone seeking productivity gains.",
   },
 ];
 

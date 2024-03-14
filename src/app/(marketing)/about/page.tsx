@@ -35,10 +35,10 @@ export default function Page() {
     <main>
       {/* Image Grid */}
       <section
-        className="overflow-hidden bg-blend-difference w-full"
+        className="w-full overflow-hidden bg-blend-difference"
         style={{ height: "calc(100vh - 4rem)" }}
       >
-        <div className="grid grid-cols-4 gap-2 h-full p-2">
+        <div className="grid h-full grid-cols-4 gap-2 p-2">
           {/* row 1 */}
           <ArticleWrapper
             content={aboutData.topics.innovation}
@@ -97,10 +97,10 @@ interface ArticleProps {
 
 const ArticleWrapper: React.FC<ArticleProps> = (props) => {
   const className =
-    "relative overflow-hidden transition-all ease-in group ";
+    "relative overflow-hidden transition-all ease-in group col-span-4 ";
   const classes = props.wide
-    ? className + "col-span-2"
-    : className + "col-span-1";
+    ? className + "md:col-span-2"
+    : className + "md:col-span-1";
 
   return (
     <article className={classes} onClick={() => props.setFocus(props.index)}>
@@ -114,8 +114,8 @@ const ArticleWrapper: React.FC<ArticleProps> = (props) => {
       />
 
       {/* Card content */}
-      <div className="relative opacity-0 h-full group-hover:opacity-100 bg-gradient-to-t from-gray-900/50 to-gray-900/25">
-        <div className="absolute bottom-0 p-4 sm:p-6 flex flex-col justify-end">
+      <div className="relative h-full bg-gradient-to-t from-gray-900/50 to-gray-900/25 opacity-0 group-hover:opacity-100">
+        <div className="absolute bottom-0 flex flex-col justify-end p-4 sm:p-6">
           <a href="#">
             <h3 className="mt-0.5 text-lg text-white">{props.content.title}</h3>
           </a>

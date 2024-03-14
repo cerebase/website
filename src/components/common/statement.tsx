@@ -10,7 +10,7 @@ export const Statement = () => {
           </h2>
 
           <p className="hidden text-sm text-gray-500 md:mt-4 md:block">
-            At Saga Labs, we envision a future where artificial intelligence
+            At cerebase, we envision a future where artificial intelligence
             transcends boundaries, empowers communities, and fosters positive
             global impact. Our mission is to pioneer open-source solutions and
             lead the way in ethical AI development and research Driven by the
