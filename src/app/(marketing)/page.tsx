@@ -11,7 +11,7 @@ import { Feature } from "@/interfaces/feature";
 import { MEDIA_BLOG, SITE_TITLE } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: SITE_TITLE + " | Copenhagen based AI studio",
+  title: SITE_TITLE + " | NLP studio",
 };
 
 export default function Home() {
@@ -19,10 +19,10 @@ export default function Home() {
     <Featured
       feature={{
         image: MEDIA_BLOG,
-        feature: "SagaGPT",
+        feature: "Cerebase Cloud",
         title: "Revolutionize Your Conversational Experience",
         description:
-          "Enhance your chat experience like never before with SagaGPT, the cutting-edge desktop plugable chat app. Communicate, collaborate, and create with powerful AI-driven features at your fingertips.",
+          "Enhance your chat experience like never before with Cerebase Cloud, the cutting-edge desktop plugable chat app. Communicate, collaborate, and create with powerful AI-driven features at your fingertips.",
       }}
     />
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+// import Image from "next/image";
 import clsx from "clsx";
 
 import { usePathname } from "next/navigation";
@@ -12,15 +13,17 @@ export const Navbar = () => {
   return (
     <header
       aria-label="Site Header"
-      className="bg-white/95 border-b fixed w-full z-50"
+      className="fixed z-50 w-full border-b bg-white/95"
     >
       <div className="mx-auto flex h-16 items-center gap-8 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/">
-          <div className="flex space-x-2 text-primary items-center">
-            <span className="text-4xl">🔮</span>
-            <span className="text-sm font-light tracking-wider">
-              Copenhagen based AI studio
+          <div className="text-primary flex items-center space-x-2">
+            {/* <span className="text-4xl">
+              <Image src={"./logo.svg"} alt="logo" width={30} height={30} />
+            </span> */}
+            <span className={"text-2xl tracking-tight text-[#132C65]"}>
+              cerebase
             </span>
           </div>
         </Link>
@@ -28,7 +31,7 @@ export const Navbar = () => {
         <div className="flex flex-1 items-center justify-end md:justify-between">
           <nav
             aria-label="Site Nav"
-            className="hidden md:flex justify-end w-full"
+            className="hidden w-full justify-end md:flex"
           >
             {/** navigation links */}
             <ul className="flex items-center gap-6 text-sm">
@@ -91,7 +94,7 @@ const NavItem = ({ href, children, pathname }: props) => {
           className={clsx(
             "transition hover:text-gray-500/75",
             active ? "text-highlight" : "text-gray-800",
-            active ? "cursor-not-allowed" : "cursor-pointer"
+            active ? "cursor-not-allowed" : "cursor-pointer",
           )}
         >
           {children}
