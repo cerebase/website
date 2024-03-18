@@ -63,18 +63,17 @@ export const Footer = () => {
             <div aria-label="footer-services">
               <p className="font-medium text-gray-900">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
+                <LinkExternal text="Cloud" url="https://chat.cerebase.com" />
                 <LinkExternal
-                  text="Chat Client"
-                  url="https://chat.saga-labs.com"
+                  text="Toolkit"
+                  url="https://www.npmjs.com/package/@cerebase/lang"
+                  disabled
                 />
-                {/* <LinkExternal
-                  text="Desktop Client"
-                  url="https://github.com/saga-labs/saga-gpt"
-                /> */}
-                {/* <LinkExternal
-                  text="Model Cloud"
-                  url="https://cloud.saga-labs.com"
-                /> */}
+                <LinkExternal
+                  text="Inference"
+                  url="https://api.cerebase.com/v1"
+                  disabled
+                />
               </ul>
             </div>
 
@@ -105,8 +104,8 @@ export const Footer = () => {
             <div aria-label="footer-legal">
               <p className="font-medium text-gray-900">Legal</p>
               <ul className="mt-6 space-y-4 text-sm">
-                <LinkInternal text="Privacy Policy" url="/privacy-policy" />
                 <LinkInternal text="Cookie Policy" url="/cookie-policy" />
+                <LinkInternal text="Privacy Policy" url="/privacy-policy" />
                 <LinkInternal text="Terms of Service" url="/terms-of-service" />
               </ul>
             </div>
@@ -128,15 +127,16 @@ export const Footer = () => {
 interface LinkProps {
   url: string;
   text: string;
+  disabled?: boolean;
 }
 
-const LinkExternal = ({ url, text }: LinkProps) => (
+const LinkExternal = ({ url, text, disabled }: LinkProps) => (
   <li>
     <a
-      href={url}
+      href={disabled ? "" : url}
       target="_blank"
       rel="noreferrer"
-      className="text-gray-700 transition hover:underline hover:opacity-75"
+      className="text-gray-700 transition hover:underline hover:opacity-75 disabled:text-gray-300"
     >
       {text}
     </a>
