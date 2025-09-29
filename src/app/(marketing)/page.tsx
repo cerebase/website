@@ -19,7 +19,7 @@ export default function Home() {
     <Featured
       feature={{
         image: MEDIA_BLOG,
-        feature: "Cerebase Cloud",
+        feature: "Trading at the speed of light",
         title: "Revolutionize Your Conversational Experience",
         description:
           "Enhance your chat experience like never before with Cerebase Cloud, the cutting-edge desktop plugable chat app. Communicate, collaborate, and create with powerful AI-driven features at your fingertips.",

@@ -1,17 +1,41 @@
+"use client";
+
 import React from "react";
 
 // Intefaces & Types
 import { Feature } from "@/interfaces/feature";
+import PixelBlast from "./pixel-plast";
 
 export const Featured = ({ feature }: { feature: Feature }) => {
   return (
     <div
-      className="overflow-hidden bg-blend-difference h-screen bg-cover bg-top bg-no-repeat bg-gradient-to-r from-indigo-300 to-purple-400"
+      className="overflow-hidden bg-blend-difference h-screen bg-[#0B132B]"
       style={{
         height: "calc(100vh - 4rem)",
-        backgroundImage: `url(${feature.image})`,
+        width: "100%",
+        position: "relative",
       }}
     >
+      <PixelBlast
+        variant="square"
+        pixelSize={4}
+        color="#132C65"
+        patternScale={3}
+        patternDensity={1.2}
+        pixelSizeJitter={0.5}
+        enableRipples
+        rippleSpeed={0.4}
+        rippleThickness={0.12}
+        rippleIntensityScale={1.5}
+        liquid
+        liquidStrength={0.12}
+        liquidRadius={1.2}
+        liquidWobbleSpeed={5}
+        speed={1.0}
+        edgeFade={0}
+        transparent
+      />
+
       <div className="absolute top-0 h-full w-full flex items-end z-20">
         <div className="p-8 md:pb-16 lg:pb-24">
           <div className="text-left">
