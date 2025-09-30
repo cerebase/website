@@ -14,16 +14,14 @@ export const metadata: Metadata = {
   title: SITE_TITLE + " | NLP studio",
 };
 
+const featureData = {
+  image: MEDIA_BLOG,
+  feature: "systematic precision",
+  title: "Foundation built on intelligence",
+  description:
+    "cerebase is a proprietary trading firm built on quantitative research and advanced machine learning. we pursue disciplined strategies to extract signal from complex markets.",
+};
+
 export default function Home() {
-  return (
-    <Featured
-      feature={{
-        image: MEDIA_BLOG,
-        feature: "Trading at the speed of light",
-        title: "Revolutionize Your Conversational Experience",
-        description:
-          "Enhance your chat experience like never before with Cerebase Cloud, the cutting-edge desktop plugable chat app. Communicate, collaborate, and create with powerful AI-driven features at your fingertips.",
-      }}
-    />
-  );
+  return <Featured feature={featureData} />;
 }

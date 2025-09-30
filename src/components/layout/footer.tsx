@@ -14,9 +14,9 @@ export const Footer = () => {
             </div>
 
             <p className="mt-4 max-w-xs text-sm text-gray-500">
-              cerebase is a forward-thinking technology company dedicated to
-              create intuitive solutions that empower individuals and businesses
-              to thrive in the digital age.
+              Proprietary trading firm built on quantitative
+              research, disciplined execution, and advanced machine learning. we
+              trade systematically to uncover signal in complex markets.
             </p>
 
             <ul className="mt-8 flex gap-3">
@@ -72,11 +72,11 @@ export const Footer = () => {
                   disabled
                 />
                 <LinkExternal
-                  text="Market Making"
+                  text="Research"
                   url="https://chat.cerebase.com"
                 />
                 <LinkExternal
-                  text="Machine Learning"
+                  text="Infrastructure"
                   url="https://www.npmjs.com/package/@cerebase/lang"
                   disabled
                 />
