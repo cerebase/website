@@ -11,7 +11,7 @@ import { Feature } from "@/interfaces/feature";
 import { MEDIA_BLOG, SITE_TITLE } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: SITE_TITLE + " | NLP studio",
+  title: SITE_TITLE + " | Systematic Trading",
 };
 
 const featureData = {
