@@ -35,13 +35,8 @@ export const Navbar = () => {
           >
             {/** navigation links */}
             <ul className="flex items-center gap-6 text-sm">
-              {/*
-              <NavItem href="/research" pathname={pathname}>
-                Research
-              </NavItem>
-              */}
               <NavItem href="/blog" pathname={pathname}>
-                Blog
+                Research
               </NavItem>
 
               <NavItem href="/open-source" pathname={pathname}>
@@ -50,6 +45,10 @@ export const Navbar = () => {
 
               <NavItem href="/about" pathname={pathname}>
                 About
+              </NavItem>
+
+              <NavItem href="/careers" pathname={pathname}>
+                Careers
               </NavItem>
             </ul>
           </nav>
@@ -95,7 +94,7 @@ const NavItem = ({ href, children, pathname }: props) => {
           className={clsx(
             "transition hover:text-gray-500/75",
             active ? "text-highlight" : "text-gray-800",
-            active ? "cursor-not-allowed" : "cursor-pointer",
+            active ? "cursor-not-allowed" : "cursor-pointer"
           )}
         >
           {children}
