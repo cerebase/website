@@ -35,7 +35,7 @@ export const Navbar = () => {
           >
             {/** navigation links */}
             <ul className="flex items-center gap-6 text-sm">
-              <NavItem href="/blog" pathname={pathname}>
+              <NavItem href="/research" pathname={pathname}>
                 Research
               </NavItem>
 
